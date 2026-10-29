@@ -2,10 +2,10 @@
 
 > Llegas por la curiosidad, te quedas por la historia.
 
-Portafolio de **Silvana Guardia**, analista de Business Intelligence en Lima, Perú.
+Portafolio de **Silvi Data**, analista de Business Intelligence en Lima, Perú.
 Aquí junto mis proyectos de análisis de datos, artículos, recursos y una bitácora de cómo trabajo.
 
-🔗 **Ver en vivo:** [tu-usuario.github.io/nombre-del-repo](https://tu-usuario.github.io/nombre-del-repo/)
+🔗 **Ver en vivo:** [silvidata.github.io/nombre-del-repo](https://silvidata.github.io/nombre-del-repo/)
 
 ![Vista previa del portafolio](assets/preview.png)
 
@@ -89,13 +89,13 @@ No necesita instalar nada:
 1. Sube el contenido de esta carpeta a un repositorio de GitHub.
 2. Entra a **Settings → Pages**.
 3. En *Source* elige la rama `main` y la carpeta `/ (root)`, y guarda.
-4. En unos minutos estará en `https://tu-usuario.github.io/nombre-del-repo/`.
+4. En unos minutos estará en `https://silvidata.github.io/nombre-del-repo/`.
 
 ## 📬 Contacto
 
-- LinkedIn: [tu perfil](#)
-- Behance: [tus proyectos creativos](#)
-- Tableau Public: [tus dashboards](#)
+- LinkedIn: [tu perfil](https://www.linkedin.com/company/103997061/admin/dashboard/)
+- Behance: [tus proyectos creativos](https://www.behance.net/silvanaguardia)
+- Tableau Public: [tus dashboards](https://public.tableau.com/app/profile/silvana.guardia/vizzes)
 
 ## ©️ Derechos
 
