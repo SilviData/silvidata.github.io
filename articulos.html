@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Artículos · Silvana Guardia</title>
+  <meta name="description" content="Artículos sobre datos, SQL, Power BI y Business Intelligence explicados sin tecnicismos.">
+  <link rel="icon" href="assets/gatos/gato-avatar.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Roboto+Mono:wght@400;500;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="app">
+  <div class="shell">
+
+    <!-- Barra lateral -->
+    <nav class="sidebar" aria-label="Secciones">
+      <div class="menu">
+        <a class="menu__link" href="index.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21 C 5 16, 8.5 14, 12 14 C 15.5 14, 19 16, 20 21"/></svg>
+          <span class="menu__texto">ABOUT</span>
+        </a>
+        <a class="menu__link" href="proyectos.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20 h8 M12 16 v4"/></svg>
+          <span class="menu__texto">PROYECTOS</span>
+        </a>
+        <a class="menu__link menu__link--activo" href="articulos.html" aria-current="page">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3 h9 l4 4 v14 H6 Z"/><path d="M9 11 h7 M9 15 h7"/></svg>
+          <span class="menu__texto">ARTÍCULOS</span>
+        </a>
+        <a class="menu__link" href="recursos.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 L 21 7 V 17 L 12 22 L 3 17 V 7 Z"/></svg>
+          <span class="menu__texto">RECURSOS</span>
+        </a>
+        <a class="menu__link" href="blog.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20 L 5 15 L 16 4 L 20 8 L 9 19 Z"/><path d="M14 6 L 18 10"/></svg>
+          <span class="menu__texto">BLOG</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Contenido -->
+    <main class="contenido">
+
+      <header class="topbar">
+        <div class="marca">
+          <div class="marca__avatar"><img src="assets/gatos/gato-avatar.png" alt="Gato de SilviData"></div>
+          <div class="marca__texto">
+            <span class="marca__nombre">SilviData</span>
+            <span class="marca__seccion">CUADERNO Nº 03 · ARTÍCULOS</span>
+          </div>
+        </div>
+        <span class="estado-trabajo">Open to work</span>
+      </header>
+
+      <div class="intro__texto">
+        <h1 class="titulo-pagina"><span class="fino">Mis</span> <span class="grueso">artículos</span></h1>
+        <p class="bajada">Lo que aprendo investigando, explicado sin tecnicismos y partiendo siempre de una pregunta real.</p>
+      </div>
+
+      <div class="bento">
+
+        <!-- Artículo destacado -->
+        <article class="card card--grande col-8 md-12 destacado">
+          <div class="destacado__texto">
+            <div class="fila">
+              <span class="fig">FIG. 01 — DESTACADO</span>
+              <span class="sello sello--punteado rot-izq">BORRADOR</span>
+            </div>
+            <h2 class="destacado__titulo"><span class="fino">¿Para qué sirve SQL</span> <span class="grueso">si uso Excel?</span></h2>
+            <p class="card__texto">[Bajada del artículo: una o dos líneas que cuenten de qué va.]</p>
+            <div class="fila">
+              <span class="chip chip--verde">SQL</span>
+              <span class="chip">Excel</span>
+              <span class="nota-pie">[x] min de lectura</span>
+              <a class="btn btn--blanco btn--chico" href="articulo-sql-excel.html">Leer →</a>
+            </div>
+          </div>
+          <svg class="destacado__boceto" viewBox="0 0 300 220" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Boceto: una hoja de cálculo que se convierte en una consulta SQL">
+            <path d="M10 20 C 50 18, 90 22, 120 20 L 121 180 C 90 182, 40 178, 11 181 Z"/>
+            <path d="M10 60 h111 M10 100 h111 M10 140 h111 M50 20 v160 M85 20 v160" stroke-width="1.8"/>
+            <path d="M140 100 C 160 92, 175 108, 196 100" stroke-width="3"/>
+            <path d="M186 90 L 198 100 L 186 110" stroke-width="3"/>
+            <path d="M212 50 C 240 48, 270 52, 292 50 L 291 150 C 260 152, 240 148, 213 151 Z" stroke-dasharray="5 5"/>
+            <path d="M224 76 h50 M224 96 h36 M224 116 h56 M224 136 h28" stroke-width="4"/>
+            <text x="16" y="208" fill="#FFFFFF" stroke="none" font-family="Caveat, cursive" font-size="22">Excel</text>
+            <text x="222" y="178" fill="#FFFFFF" stroke="none" font-family="Caveat, cursive" font-size="22">SQL</text>
+          </svg>
+        </article>
+
+        <!-- Temas -->
+        <aside class="card col-4 md-12">
+          <span class="fig">FIG. 02 — TEMAS</span>
+          <div class="fila">
+            <a class="estampita estampita--blanca rot-izq" href="#">SQL</a>
+            <a class="estampita rot-der" href="#">Power BI</a>
+            <a class="estampita estampita--verde rot-izq" href="#">Excel</a>
+            <a class="estampita estampita--punteada rot-der" href="#">Storytelling</a>
+            <a class="estampita estampita--crema rot-izq" href="#">Automatización</a>
+            <a class="estampita rot-leve" href="#">Business Intelligence</a>
+          </div>
+          <img class="sticker sticker--temas sticker--derecha mt-auto" src="assets/gatos/gato-sentado.png" alt="Gato de SilviData sentado">
+        </aside>
+
+        <!-- Lista de artículos -->
+        <section class="card col-12 lista-renglones" aria-label="Todos los artículos">
+          <article class="renglon">
+            <span class="renglon__fecha">[dd/mm/aaaa]</span>
+            <div class="renglon__texto">
+              <h3 class="renglon__titulo">[Título del artículo]</h3>
+              <span>[Una línea sobre de qué trata]</span>
+            </div>
+            <span class="chip">[Tema]</span>
+            <a class="enlace-mono" href="articulo-sql-excel.html">Leer →</a>
+          </article>
+          <article class="renglon">
+            <span class="renglon__fecha">[dd/mm/aaaa]</span>
+            <div class="renglon__texto">
+              <h3 class="renglon__titulo">[Título del artículo]</h3>
+              <span>[Una línea sobre de qué trata]</span>
+            </div>
+            <span class="chip">[Tema]</span>
+            <a class="enlace-mono" href="articulo-sql-excel.html">Leer →</a>
+          </article>
+          <article class="renglon">
+            <span class="renglon__fecha">[dd/mm/aaaa]</span>
+            <div class="renglon__texto">
+              <h3 class="renglon__titulo">[Título del artículo]</h3>
+              <span>[Una línea sobre de qué trata]</span>
+            </div>
+            <span class="chip">[Tema]</span>
+            <a class="enlace-mono" href="articulo-sql-excel.html">Leer →</a>
+          </article>
+        </section>
+
+      </div>
+
+      <footer class="footer">
+        <span>SilviData · Llegas por la curiosidad, te quedas por la historia.</span>
+        <span>© 2026 Silvana Guardia · Lima, Perú</span>
+      </footer>
+    </main>
+
+  </div>
+</div>
+</body>
+</html>

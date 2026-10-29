@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bitácora de Expedición · Silvana Guardia</title>
+  <meta name="description" content="Caso de estudio: dashboard Bitácora de Expedición en Tableau.">
+  <link rel="icon" href="assets/gatos/gato-avatar.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Roboto+Mono:wght@400;500;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="app">
+  <div class="shell">
+
+    <!-- Barra lateral -->
+    <nav class="sidebar" aria-label="Secciones">
+      <div class="menu">
+        <a class="menu__link" href="index.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21 C 5 16, 8.5 14, 12 14 C 15.5 14, 19 16, 20 21"/></svg>
+          <span class="menu__texto">ABOUT</span>
+        </a>
+        <a class="menu__link menu__link--activo" href="proyectos.html" aria-current="page">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20 h8 M12 16 v4"/></svg>
+          <span class="menu__texto">PROYECTOS</span>
+        </a>
+        <a class="menu__link" href="articulos.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3 h9 l4 4 v14 H6 Z"/><path d="M9 11 h7 M9 15 h7"/></svg>
+          <span class="menu__texto">ARTÍCULOS</span>
+        </a>
+        <a class="menu__link" href="recursos.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 L 21 7 V 17 L 12 22 L 3 17 V 7 Z"/></svg>
+          <span class="menu__texto">RECURSOS</span>
+        </a>
+        <a class="menu__link" href="blog.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20 L 5 15 L 16 4 L 20 8 L 9 19 Z"/><path d="M14 6 L 18 10"/></svg>
+          <span class="menu__texto">BLOG</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Contenido -->
+    <main class="contenido">
+
+      <header class="topbar">
+        <a class="volver" href="proyectos.html">← Volver a proyectos</a>
+        <span class="meta">CASO Nº 01 · DASHBOARD</span>
+      </header>
+
+      <!-- Portada del caso -->
+      <div class="intro__texto">
+        <div class="fila">
+          <span class="chip chip--verde">PUBLICADO</span>
+          <span class="chip">Tableau</span>
+        </div>
+        <h1 class="titulo-caso"><span class="fino">Bitácora de</span> <span class="grueso">Expedición</span></h1>
+        <p class="pregunta-mano">«[La pregunta que responde este dashboard]»</p>
+      </div>
+
+      <!-- Ficha técnica -->
+      <div class="bento">
+        <div class="ficha col-3"><span class="ficha__etiqueta">MI ROL</span><span class="ficha__valor">[Análisis y diseño]</span></div>
+        <div class="ficha col-3"><span class="ficha__etiqueta">TIPO</span><span class="ficha__valor">Dashboard</span></div>
+        <div class="ficha col-3"><span class="ficha__etiqueta">DATOS</span><span class="ficha__valor">[Fuente · nº de filas]</span></div>
+        <div class="ficha col-3"><span class="ficha__etiqueta">DURACIÓN</span><span class="ficha__valor">[x semanas]</span></div>
+      </div>
+
+      <!-- Imagen principal -->
+      <figure class="figura">
+        <div class="imagen-vacia imagen-vacia--ancha">[ Captura o video del dashboard ]</div>
+        <figcaption>FIG. 01 — Vista general del dashboard</figcaption>
+      </figure>
+
+      <div class="bento">
+
+        <!-- 01 Problema -->
+        <section class="card card--grande col-6">
+          <div class="seccion__cabecera">
+            <span class="seccion__numero">01</span>
+            <h2 class="card__titulo">El problema</h2>
+          </div>
+          <p class="card__texto">[Qué estaba pasando, a quién le afectaba y por qué importaba resolverlo.]</p>
+          <p class="card__texto">[Qué se hacía antes y por qué no alcanzaba.]</p>
+        </section>
+
+        <!-- 02 Solución -->
+        <section class="card card--grande col-6">
+          <div class="seccion__cabecera">
+            <span class="seccion__numero">02</span>
+            <h2 class="card__titulo">La solución</h2>
+          </div>
+          <p class="card__texto">[Qué construiste y cómo responde al problema.]</p>
+          <p class="card__texto">[Las decisiones clave: qué métricas elegiste, cómo organizaste los datos, por qué esta visualización.]</p>
+        </section>
+
+        <!-- 03 Impacto estimado -->
+        <section class="card card--grande col-12">
+          <div class="seccion__cabecera">
+            <span class="seccion__numero">03</span>
+            <h2 class="card__titulo">Impacto estimado</h2>
+          </div>
+          <p class="card__texto bajada">[Qué cambia si alguien usa esta solución: tiempo ahorrado, errores evitados, decisiones más rápidas.]</p>
+          <div class="bento">
+            <div class="cifra cifra--blanca col-4"><span class="cifra__valor">[x %]</span><span class="cifra__texto">[Qué mide esta cifra]</span></div>
+            <div class="cifra cifra--verde col-4"><span class="cifra__valor">[x h]</span><span class="cifra__texto">[Qué mide esta cifra]</span></div>
+            <div class="cifra cifra--crema col-4"><span class="cifra__valor">[x]</span><span class="cifra__texto">[Qué mide esta cifra]</span></div>
+          </div>
+          <span class="nota-pie">* Cifras estimadas. [Cómo las calculaste y con qué supuestos.]</span>
+        </section>
+
+        <!-- 04 Lecciones aprendidas -->
+        <section class="card card--grande col-7">
+          <div class="seccion__cabecera">
+            <span class="seccion__numero">04</span>
+            <h2 class="card__titulo">Lecciones aprendidas</h2>
+          </div>
+          <ul class="lecciones">
+            <li>[Algo que salió distinto a lo que esperabas]</li>
+            <li>[Algo que aprendiste de la herramienta o de los datos]</li>
+            <li>[Lo que harías distinto la próxima vez]</li>
+          </ul>
+          <img class="sticker sticker--mediano sticker--derecha mt-auto" src="assets/gatos/gato-sorprendido.png" alt="Gato de SilviData sorprendido">
+        </section>
+
+        <!-- 05 Stack tecnológico -->
+        <section class="card card--crema card--grande col-5">
+          <div class="seccion__cabecera texto-azul">
+            <span class="seccion__numero">05</span>
+            <h2 class="card__titulo">Stack tecnológico</h2>
+          </div>
+          <ul class="stack">
+            <li><span class="stack__nombre">Tableau</span>[Para qué la usaste aquí]</li>
+            <li><span class="stack__nombre texto-azul">[Herramienta]</span>[Para qué la usaste aquí]</li>
+            <li><span class="stack__nombre texto-azul">[Herramienta]</span>[Para qué la usaste aquí]</li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Acciones -->
+      <div class="fila fila--entre">
+        <div class="fila">
+          <a class="btn btn--blanco" href="#" target="_blank" rel="noopener">Ver demo ↗</a>
+          <a class="btn" href="#" target="_blank" rel="noopener">Repositorio en GitHub ↗</a>
+        </div>
+        <a class="btn btn--punteado" href="proyectos.html">Siguiente proyecto →</a>
+      </div>
+
+      <footer class="footer">
+        <span>SilviData · Llegas por la curiosidad, te quedas por la historia.</span>
+        <span>© 2026 Silvana Guardia · Lima, Perú</span>
+      </footer>
+    </main>
+
+  </div>
+</div>
+</body>
+</html>

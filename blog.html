@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bitácora · Silvana Guardia</title>
+  <meta name="description" content="Bitácora: el detrás de cámaras de mis proyectos de datos.">
+  <link rel="icon" href="assets/gatos/gato-avatar.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Roboto+Mono:wght@400;500;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="app">
+  <div class="shell">
+
+    <!-- Barra lateral -->
+    <nav class="sidebar" aria-label="Secciones">
+      <div class="menu">
+        <a class="menu__link" href="index.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21 C 5 16, 8.5 14, 12 14 C 15.5 14, 19 16, 20 21"/></svg>
+          <span class="menu__texto">ABOUT</span>
+        </a>
+        <a class="menu__link" href="proyectos.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20 h8 M12 16 v4"/></svg>
+          <span class="menu__texto">PROYECTOS</span>
+        </a>
+        <a class="menu__link" href="articulos.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3 h9 l4 4 v14 H6 Z"/><path d="M9 11 h7 M9 15 h7"/></svg>
+          <span class="menu__texto">ARTÍCULOS</span>
+        </a>
+        <a class="menu__link" href="recursos.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 L 21 7 V 17 L 12 22 L 3 17 V 7 Z"/></svg>
+          <span class="menu__texto">RECURSOS</span>
+        </a>
+        <a class="menu__link menu__link--activo" href="blog.html" aria-current="page">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20 L 5 15 L 16 4 L 20 8 L 9 19 Z"/><path d="M14 6 L 18 10"/></svg>
+          <span class="menu__texto">BLOG</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Contenido -->
+    <main class="contenido">
+
+      <header class="topbar">
+        <div class="marca">
+          <div class="marca__avatar"><img src="assets/gatos/gato-avatar.png" alt="Gato de SilviData"></div>
+          <div class="marca__texto">
+            <span class="marca__nombre">SilviData</span>
+            <span class="marca__seccion">CUADERNO Nº 05 · BLOG</span>
+          </div>
+        </div>
+        <span class="estado-trabajo">Open to work</span>
+      </header>
+
+      <div class="intro__texto">
+        <h1 class="titulo-pagina"><span class="fino">Bitá</span><span class="grueso">cora</span></h1>
+        <p class="bajada">El detrás de cámaras: cómo empiezan los proyectos, lo que sale mal y lo que descubro buscando data a las 3 a.m.</p>
+      </div>
+
+      <div class="bento">
+
+        <!-- Línea de tiempo -->
+        <section class="card card--grande col-8 md-12" aria-label="Entradas del blog">
+
+          <article class="entrada">
+            <div class="entrada__riel" aria-hidden="true"><span class="entrada__punto"></span><span class="entrada__linea"></span></div>
+            <div class="entrada__cuerpo">
+              <div class="fila"><span class="nota-pie">[dd/mm/aaaa]</span><span class="chip">Dashboards</span></div>
+              <h2 class="entrada__titulo">Un dashboard puede mostrar que las ventas bajaron. ¿Puede explicar por qué?</h2>
+              <p class="card__texto">[Una o dos líneas de qué va]</p>
+              <a class="enlace-mono" href="articulo-sql-excel.html">Leer la entrada →</a>
+            </div>
+          </article>
+
+          <article class="entrada">
+            <div class="entrada__riel" aria-hidden="true"><span class="entrada__punto"></span><span class="entrada__linea"></span></div>
+            <div class="entrada__cuerpo">
+              <div class="fila"><span class="nota-pie">[dd/mm/aaaa]</span><span class="chip">Procesos</span></div>
+              <h2 class="entrada__titulo">El pantallazo no es una base de datos: el problema de auditar procesos manualmente</h2>
+              <p class="card__texto">[Una o dos líneas de qué va]</p>
+              <a class="enlace-mono" href="articulo-sql-excel.html">Leer la entrada →</a>
+            </div>
+          </article>
+
+          <article class="entrada">
+            <div class="entrada__riel" aria-hidden="true"><span class="entrada__punto"></span><span class="entrada__linea"></span></div>
+            <div class="entrada__cuerpo">
+              <div class="fila"><span class="nota-pie">[dd/mm/aaaa]</span><span class="chip">Automatización</span></div>
+              <h2 class="entrada__titulo">De cinco archivos de Excel a un reporte que se actualiza sin reconstruirlo cada semana</h2>
+              <p class="card__texto">[Una o dos líneas de qué va]</p>
+              <a class="enlace-mono" href="articulo-sql-excel.html">Leer la entrada →</a>
+            </div>
+          </article>
+
+          <article class="entrada">
+            <div class="entrada__riel" aria-hidden="true"><span class="entrada__punto"></span><span class="entrada__linea"></span></div>
+            <div class="entrada__cuerpo">
+              <div class="fila"><span class="nota-pie">[dd/mm/aaaa]</span><span class="chip">Calidad</span></div>
+              <h2 class="entrada__titulo">Analizar el 100 % de las llamadas no significa detectar el 100 % de los errores</h2>
+              <p class="card__texto">[Una o dos líneas de qué va]</p>
+              <a class="enlace-mono" href="articulo-sql-excel.html">Leer la entrada →</a>
+            </div>
+          </article>
+
+          <article class="entrada">
+            <div class="entrada__riel" aria-hidden="true"><span class="entrada__punto"></span><span class="entrada__linea"></span></div>
+            <div class="entrada__cuerpo">
+              <div class="fila"><span class="nota-pie">[dd/mm/aaaa]</span><span class="chip">Calidad de datos</span></div>
+              <h2 class="entrada__titulo">Antes de construir un dashboard, revisa si tus datos merecen confianza</h2>
+              <p class="card__texto">[Una o dos líneas de qué va]</p>
+              <a class="enlace-mono" href="articulo-sql-excel.html">Leer la entrada →</a>
+            </div>
+          </article>
+
+          <article class="entrada">
+            <div class="entrada__riel" aria-hidden="true"><span class="entrada__punto"></span><span class="entrada__linea"></span></div>
+            <div class="entrada__cuerpo">
+              <div class="fila"><span class="nota-pie">[dd/mm/aaaa]</span><span class="chip">Automatización</span></div>
+              <h2 class="entrada__titulo">¿Qué procesos deberías automatizar primero en una empresa?</h2>
+              <p class="card__texto">[Una o dos líneas de qué va]</p>
+              <a class="enlace-mono" href="articulo-sql-excel.html">Leer la entrada →</a>
+            </div>
+          </article>
+
+          <article class="entrada">
+            <div class="entrada__riel" aria-hidden="true"><span class="entrada__punto"></span><span class="entrada__linea"></span></div>
+            <div class="entrada__cuerpo">
+              <div class="fila"><span class="nota-pie">[dd/mm/aaaa]</span><span class="chip">Métricas</span></div>
+              <h2 class="entrada__titulo">Cumplir la meta no siempre significa que el negocio esté funcionando bien</h2>
+              <p class="card__texto">[Una o dos líneas de qué va]</p>
+              <a class="enlace-mono" href="articulo-sql-excel.html">Leer la entrada →</a>
+            </div>
+          </article>
+
+          <article class="entrada">
+            <div class="entrada__riel" aria-hidden="true"><span class="entrada__punto"></span><span class="entrada__linea"></span></div>
+            <div class="entrada__cuerpo">
+              <div class="fila"><span class="nota-pie">[dd/mm/aaaa]</span><span class="chip">Reportes</span></div>
+              <h2 class="entrada__titulo">Tres reportes muestran tres resultados distintos: ¿dónde está el problema?</h2>
+              <p class="card__texto">[Una o dos líneas de qué va]</p>
+              <a class="enlace-mono" href="articulo-sql-excel.html">Leer la entrada →</a>
+            </div>
+          </article>
+
+        </section>
+
+        <!-- Columna lateral -->
+        <div class="col-4 md-12 intro__texto">
+          <aside class="card card--crema ahora rot-leve">
+            <span class="fig texto-azul">AHORA MISMO</span>
+            <dl>
+              <div><dt>TRABAJANDO EN</dt><dd>El rediseño de este portafolio</dd></div>
+              <div><dt>EN EL TINTERO</dt><dd>Caso: capturas de pantalla como evidencia</dd></div>
+              <div><dt>HORA DE INVESTIGAR</dt><dd>3:00 a.m.</dd></div>
+            </dl>
+            <img class="sticker sticker--mediano sticker--derecha" src="assets/gatos/gato-durmiendo.png" alt="Gato de SilviData durmiendo">
+          </aside>
+
+          <aside class="card card--punteada">
+            <span class="fig">¿TE SUENA ALGO DE ESTO?</span>
+            <p class="pide pide--izquierda">Si en tu empresa pasa algo parecido, <strong>conversemos.</strong></p>
+            <a class="btn btn--blanco alinear-inicio" href="#">Escríbeme →</a>
+          </aside>
+        </div>
+
+      </div>
+
+      <footer class="footer">
+        <span>SilviData · Llegas por la curiosidad, te quedas por la historia.</span>
+        <span>© 2026 Silvana Guardia · Lima, Perú</span>
+      </footer>
+    </main>
+
+  </div>
+</div>
+</body>
+</html>

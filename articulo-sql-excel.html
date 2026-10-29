@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¿Para qué sirve SQL si uso Excel? · Silvana Guardia</title>
+  <meta name="description" content="Artículo: para qué sirve SQL si ya trabajas con Excel.">
+  <link rel="icon" href="assets/gatos/gato-avatar.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Roboto+Mono:wght@400;500;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="app">
+  <div class="shell">
+
+    <!-- Barra lateral -->
+    <nav class="sidebar" aria-label="Secciones">
+      <div class="menu">
+        <a class="menu__link" href="index.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21 C 5 16, 8.5 14, 12 14 C 15.5 14, 19 16, 20 21"/></svg>
+          <span class="menu__texto">ABOUT</span>
+        </a>
+        <a class="menu__link" href="proyectos.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20 h8 M12 16 v4"/></svg>
+          <span class="menu__texto">PROYECTOS</span>
+        </a>
+        <a class="menu__link menu__link--activo" href="articulos.html" aria-current="page">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3 h9 l4 4 v14 H6 Z"/><path d="M9 11 h7 M9 15 h7"/></svg>
+          <span class="menu__texto">ARTÍCULOS</span>
+        </a>
+        <a class="menu__link" href="recursos.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 L 21 7 V 17 L 12 22 L 3 17 V 7 Z"/></svg>
+          <span class="menu__texto">RECURSOS</span>
+        </a>
+        <a class="menu__link" href="blog.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20 L 5 15 L 16 4 L 20 8 L 9 19 Z"/><path d="M14 6 L 18 10"/></svg>
+          <span class="menu__texto">BLOG</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Contenido -->
+    <main class="contenido">
+
+      <header class="topbar">
+        <a class="volver" href="articulos.html">← Volver a artículos</a>
+        <span class="meta">[dd/mm/aaaa] · [x] MIN DE LECTURA</span>
+      </header>
+
+      <div class="intro__texto">
+        <div class="fila">
+          <span class="chip chip--verde">SQL</span>
+          <span class="chip">Excel</span>
+        </div>
+        <h1 class="titulo-caso"><span class="fino">¿Para qué sirve SQL</span> <span class="grueso">si uso Excel?</span></h1>
+        <p class="bajada">[Bajada: la idea principal del artículo en una o dos líneas.]</p>
+      </div>
+
+      <div class="bento">
+
+        <!-- Cuerpo del artículo -->
+        <article class="hoja col-8">
+          <p>[Arranca con la situación o la pregunta que te llevó a escribir esto. Aquí va tu primer párrafo.]</p>
+
+          <h2 id="seccion-1">[Subtítulo 1]</h2>
+          <p>[Desarrollo de la idea.]</p>
+
+          <blockquote>[Una frase tuya que resuma la idea]</blockquote>
+
+          <h2 id="seccion-2">[Subtítulo 2]</h2>
+          <p>[Explica el ejemplo antes de mostrar la consulta.]</p>
+<pre><code>-- [Tu consulta de ejemplo]
+SELECT columna, COUNT(*) AS total
+FROM tabla
+GROUP BY columna;</code></pre>
+
+          <figure class="figura">
+            <div class="imagen-vacia imagen-vacia--video">[ Gráfico o captura ]</div>
+            <figcaption>FIG. 01 — [Qué se ve en la imagen]</figcaption>
+          </figure>
+
+          <h2 id="seccion-3">[Subtítulo 3]</h2>
+          <p>[Cierre: qué debería llevarse quien lee.]</p>
+
+          <div class="en-corto">
+            <span class="fig">EN CORTO</span>
+            <p>[Resumen en 2 o 3 líneas para quien solo quiere la idea.]</p>
+          </div>
+        </article>
+
+        <!-- Lateral -->
+        <aside class="col-4 md-12 intro__texto">
+          <nav class="card indice" aria-label="En este artículo">
+            <span class="fig">EN ESTE ARTÍCULO</span>
+            <a href="#seccion-1"><span>01</span>[Subtítulo 1]</a>
+            <a href="#seccion-2"><span>02</span>[Subtítulo 2]</a>
+            <a href="#seccion-3"><span>03</span>[Subtítulo 3]</a>
+          </nav>
+
+          <div class="card card--punteada autora">
+            <img class="sticker" src="assets/gatos/gato-frente.png" alt="Gato de SilviData" width="84" height="88">
+            <div class="marca__texto">
+              <strong>Silvana Guardia</strong>
+              <span>Business Intelligence · Lima, Perú</span>
+            </div>
+          </div>
+
+          <a class="siguiente" href="articulos.html">
+            <span class="fig">SIGUIENTE ARTÍCULO →</span>
+            <span class="siguiente__titulo">[Título del siguiente artículo]</span>
+          </a>
+        </aside>
+
+      </div>
+
+      <footer class="footer">
+        <span>SilviData · Llegas por la curiosidad, te quedas por la historia.</span>
+        <span>© 2026 Silvana Guardia · Lima, Perú</span>
+      </footer>
+    </main>
+
+  </div>
+</div>
+</body>
+</html>

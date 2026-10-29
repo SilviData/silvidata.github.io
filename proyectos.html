@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyectos · Silvana Guardia</title>
+  <meta name="description" content="Proyectos de análisis de datos aplicados a problemas reales de negocio.">
+  <link rel="icon" href="assets/gatos/gato-avatar.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Roboto+Mono:wght@400;500;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="app">
+  <div class="shell">
+
+    <!-- Barra lateral -->
+    <nav class="sidebar" aria-label="Secciones">
+      <div class="menu">
+        <a class="menu__link" href="index.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21 C 5 16, 8.5 14, 12 14 C 15.5 14, 19 16, 20 21"/></svg>
+          <span class="menu__texto">ABOUT</span>
+        </a>
+        <a class="menu__link menu__link--activo" href="proyectos.html" aria-current="page">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20 h8 M12 16 v4"/></svg>
+          <span class="menu__texto">PROYECTOS</span>
+        </a>
+        <a class="menu__link" href="articulos.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3 h9 l4 4 v14 H6 Z"/><path d="M9 11 h7 M9 15 h7"/></svg>
+          <span class="menu__texto">ARTÍCULOS</span>
+        </a>
+        <a class="menu__link" href="recursos.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 L 21 7 V 17 L 12 22 L 3 17 V 7 Z"/></svg>
+          <span class="menu__texto">RECURSOS</span>
+        </a>
+        <a class="menu__link" href="blog.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20 L 5 15 L 16 4 L 20 8 L 9 19 Z"/><path d="M14 6 L 18 10"/></svg>
+          <span class="menu__texto">BLOG</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Contenido -->
+    <main class="contenido">
+
+      <header class="topbar">
+        <div class="marca">
+          <div class="marca__avatar"><img src="assets/gatos/gato-avatar.png" alt="Gato de SilviData"></div>
+          <div class="marca__texto">
+            <span class="marca__nombre">SilviData</span>
+            <span class="marca__seccion">CUADERNO Nº 02 · PROYECTOS</span>
+          </div>
+        </div>
+        <span class="estado-trabajo">Open to work</span>
+      </header>
+
+      <div class="intro">
+        <div class="intro__texto">
+          <h1 class="titulo-pagina"><span class="fino">Pro</span><span class="grueso">yectos</span></h1>
+          <p class="bajada">Análisis aplicados a problemas reales de negocio: de la pregunta a la recomendación.</p>
+        </div>
+        <div class="fila" role="group" aria-label="Filtrar proyectos">
+          <button class="btn btn--activo" type="button" data-filtro="todos" aria-pressed="true">Todos</button>
+          <button class="btn" type="button" data-filtro="dashboard" aria-pressed="false">Dashboards</button>
+          <button class="btn" type="button" data-filtro="caso" aria-pressed="false">Casos de negocio</button>
+        </div>
+      </div>
+
+      <!-- Proyectos: cada tarjeta usa la misma estructura.
+           Para agregar uno, copia un <article class="proyecto"> y cambia su contenido.
+           data-tipo define en qué filtro aparece: dashboard | caso -->
+      <div class="bento">
+
+        <article class="card proyecto col-4 lg-6 md-12" data-tipo="dashboard">
+          <div class="proyecto__imagen">
+            <svg viewBox="0 0 600 340" preserveAspectRatio="none" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Boceto decorativo de un dashboard">
+              <path d="M40 60 h150 M40 84 h90"/>
+              <path d="M40 290 L 100 240 L 150 258 L 220 180 L 280 200"/>
+              <circle cx="250" cy="90" r="30"/>
+              <path d="M350 290 v-60 M390 290 v-110 M430 290 v-80 M470 290 v-150 M510 290 v-50 M550 290 v-100" stroke-width="18"/>
+              <path d="M330 292 C 430 290, 500 294, 580 292"/>
+            </svg>
+          </div>
+          <div class="fila fila--entre">
+            <span class="fig">FIG. 01 — DASHBOARD</span>
+            <span class="chip chip--verde">PUBLICADO</span>
+          </div>
+          <h2 class="card__titulo">Bitácora de Expedición</h2>
+          <p class="card__texto">Dashboard en Tableau con selector Hombre / Mujer. [La pregunta que responde]</p>
+          <div class="fila"><span class="chip chip--blanco">Tableau</span></div>
+          <div class="fila mt-auto">
+            <a class="btn btn--blanco" href="proyecto-bitacora.html">Ver el caso →</a>
+            <a class="btn" href="#" target="_blank" rel="noopener">Demo ↗</a>
+          </div>
+        </article>
+
+        <article class="card card--punteada proyecto col-4 lg-6 md-12" data-tipo="caso">
+          <div class="proyecto__imagen">[ Imagen del proyecto ]</div>
+          <div class="fila fila--entre">
+            <span class="fig">FIG. 02 — CASO</span>
+            <span class="sello rot-der">PRÓXIMAMENTE</span>
+          </div>
+          <h2 class="card__titulo">¿Qué pasa cuando una operación depende de capturas de pantalla como evidencia?</h2>
+          <p class="card__texto">[Resumen del proyecto en una línea]</p>
+          <div class="fila mt-auto"><span class="chip">[Herramienta]</span></div>
+        </article>
+
+        <article class="card card--punteada proyecto col-4 lg-6 md-12" data-tipo="caso">
+          <div class="proyecto__imagen">[ Imagen del proyecto ]</div>
+          <div class="fila fila--entre">
+            <span class="fig">FIG. 03 — CASO</span>
+            <span class="sello rot-der">PRÓXIMAMENTE</span>
+          </div>
+          <h2 class="card__titulo">Control de calidad humano vs. Speech Analytics: ¿detectan los mismos problemas?</h2>
+          <p class="card__texto">[Resumen del proyecto en una línea]</p>
+          <div class="fila mt-auto"><span class="chip">[Herramienta]</span></div>
+        </article>
+
+        <article class="card card--punteada proyecto col-4 lg-6 md-12" data-tipo="caso">
+          <div class="proyecto__imagen">[ Imagen del proyecto ]</div>
+          <div class="fila fila--entre">
+            <span class="fig">FIG. 04 — CASO</span>
+            <span class="sello rot-der">PRÓXIMAMENTE</span>
+          </div>
+          <h2 class="card__titulo">¿Cómo mejorar un proceso con registros, métricas y trazabilidad?</h2>
+          <p class="card__texto">[Resumen del proyecto en una línea]</p>
+          <div class="fila mt-auto"><span class="chip">[Herramienta]</span></div>
+        </article>
+
+        <article class="card card--punteada proyecto col-4 lg-6 md-12" data-tipo="dashboard">
+          <div class="proyecto__imagen">[ Imagen del proyecto ]</div>
+          <div class="fila fila--entre">
+            <span class="fig">FIG. 05 — DASHBOARD</span>
+            <span class="sello rot-der">PRÓXIMAMENTE</span>
+          </div>
+          <h2 class="card__titulo">[Nombre del proyecto]</h2>
+          <p class="card__texto">[Resumen del proyecto en una línea]</p>
+          <div class="fila mt-auto"><span class="chip">[Herramienta]</span></div>
+        </article>
+
+        <article class="card card--punteada proyecto col-4 lg-6 md-12" data-tipo="caso">
+          <div class="proyecto__imagen">[ Imagen del proyecto ]</div>
+          <div class="fila fila--entre">
+            <span class="fig">FIG. 06 — CASO</span>
+            <span class="sello rot-der">PRÓXIMAMENTE</span>
+          </div>
+          <h2 class="card__titulo">[Nombre del proyecto]</h2>
+          <p class="card__texto">[Resumen del proyecto en una línea]</p>
+          <div class="fila mt-auto"><span class="chip">[Herramienta]</span></div>
+        </article>
+
+        <!-- Banner de Behance: siempre visible, ocupa todo el ancho -->
+        <aside class="card card--crema col-12 behance">
+          <div class="behance__texto">
+            <span class="fig texto-azul">LO CREATIVO</span>
+            <h2 class="destacado__titulo texto-azul"><span class="fino">Investigaciones visuales e</span> <span class="grueso">ilustración</span></h2>
+            <p class="card__texto">Mis proyectos más creativos, donde mezclo datos con ilustración, viven en Behance.</p>
+          </div>
+          <div class="behance__acciones">
+            <a class="btn btn--azul" href="#" target="_blank" rel="noopener">Ir a Behance ↗</a>
+            <img class="sticker sticker--chico" src="assets/gatos/gato-brillitos.png" alt="Gato de SilviData con ojos brillantes">
+          </div>
+        </aside>
+
+      </div>
+
+      <footer class="footer">
+        <span>SilviData · Llegas por la curiosidad, te quedas por la historia.</span>
+        <span>© 2026 Silvana Guardia · Lima, Perú</span>
+      </footer>
+    </main>
+
+  </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
